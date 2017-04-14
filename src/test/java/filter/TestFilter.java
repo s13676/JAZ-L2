@@ -33,7 +33,7 @@ public class TestFilter extends Mockito {
 	RegistrationClosedFilter registrationClosedFilter;
 	
 	@Test
-	public void filter_should_accept_form_if_already_send() throws IOException, ServletException {
+	public void filter_should_deny_form_if_user_already_send_it() throws IOException, ServletException {
 		HttpServletRequest req = mock(HttpServletRequest.class);
 		HttpServletResponse resp = mock(HttpServletResponse.class);
 		HttpSession session = mock(HttpSession.class);
